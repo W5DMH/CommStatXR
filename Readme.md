@@ -4,11 +4,15 @@
 CommstatX is a Python version of the CommStat software designed to run on Linux(windows X version coming soon) 
 Download the archive, unarchive it into the folder commstatx and run install.py 
 
-Python3 install.py 
+probably best to update python a bit before starting: 
+<b>in a terminal type : python3 -m pip install --upgrade pip </b>
+
+when the above command completes, make sure you are in the commstatx folder and then : 
+type: Python3 install.py 
 
 After a successful install (this installs all of the necessary Python modules) 
 
-python3 commstatx.py    
+type: python3 commstatx.py    
 
 you should see a settings window that must be populated with a callsign, and a path to the 
 JS8Call log directory (use JS8Call "LOG" menu item and "Open Log Directory" to get the path and
