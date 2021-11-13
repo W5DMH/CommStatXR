@@ -237,6 +237,7 @@ def parseDirected():
                 conn.commit()
                 getmember(callsign, membergrp1,membergrp2, utc)
                 print(count)
+                print("marquee group1 :"+group1)
             if "{~%}" in str:  # CHECKIN
                 arr = str.split('\t')
                 utc = arr[0]
