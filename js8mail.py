@@ -147,7 +147,7 @@ class Ui_FormJS8Mail(object):
             emailcmd = "@APRSIS CMD :EMAIL-2  :";
             emailtail = "{03}";
             message = ""+emailcmd+""+email+" "+body+""+emailtail+""
-            messageType = js8callAPIsupport.TYPE_TX_SETMESSAGE
+            messageType = js8callAPIsupport.TYPE_TX_SEND
             mode = "EMAIL-2"
             mode = mode.ljust(9)
             messageString = message  # mode+" "+self.tocall.get()+" "+text
