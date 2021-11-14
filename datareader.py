@@ -138,6 +138,7 @@ def parseDirected():
     for num, str in enumerate(last_lines, 1):
         if group1 in str:
             currentgrp = group1
+            print("group1 in currentgrp :"+currentgrp)
             membergrp1 = group1
 
         if group2 in str:
@@ -163,7 +164,7 @@ def parseDirected():
                 arr4 = callsignlg.split('/')
                 callsign = arr4[0]
                 bulletin = arr2[2]
-                print(currentgrp)
+                print("bulletin group "+currentgrp)
                 #print(arr)
 
                 cur.execute("INSERT OR REPLACE INTO bulletins_Data (datetime, idnum, groupid, callsign, message) VALUES(?, ?, ?, ?, ? )", (utc, id, currentgrp, callsign, bulletin))
@@ -237,7 +238,7 @@ def parseDirected():
                 conn.commit()
                 getmember(callsign, membergrp1,membergrp2, utc)
                 print(count)
-                print("marquee group1 :"+group1)
+                print("marquee group1 :"+currentgrp)
             if "{~%}" in str:  # CHECKIN
                 arr = str.split('\t')
                 utc = arr[0]
