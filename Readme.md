@@ -1,13 +1,12 @@
 # CommStatXR BETA 0.01 Released 11/14/21
 <h3 style="color: #4485b8;">CommStatXR BETA 0.01 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatXR/blob/main/CommStatXBeta.png?raw=true" alt="CommStatXR 0.01" width="300" height="170" /></h3>
 
-CommstatX is a Python version of the CommStat software designed to run on Linux(windows X version coming soon) 
-Download the archive, unarchive it into the folder commstatx and run install.py 
-
+CommstatXR is a Python version of the CommStat software designed to run on Rasberry Pi Buster or Bullseye operating systems. 
 probably best to update python a bit before starting: <br>
 <b>in a terminal type : python3 -m pip install --upgrade pip </b>
-
 when the above command completes, make sure you are in the commstatx folder and then : <br>
+
+Download the archive into home/pi, unarchive it and it will create the folder "commstatx", go into that folder and run install.py 
 <b>type: Python3 install.py </b>
 
 After a successful install (this installs all of the necessary Python modules) 
@@ -24,7 +23,7 @@ After that is complete you should be able to run CommStatx by retyping:<br>
 <br>
 
  
-<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/CommStatX/raw/main/commstatx.tar.gz" target="_blank" rel="noopener">CommStatX BETA 0.03</a></h3>
+<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/CommStatXR/blob/main/commstatxR.tar.gz" target="_blank" rel="noopener">CommStatXR BETA 0.03</a></h3>
 <hr />
 
 Get CommStat Support at: <br>
