@@ -24,6 +24,7 @@ like /home/dan/.local/share/JS8Call    do not enter the trailing slash or the fi
 After that is complete you should be able to run CommStatx by retyping:<br>
 <b> type : python3 commstatx.py </b>
 <br>
+<BR>
 
  
 <h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/CommStatXR/blob/main/commstatxR.tar.gz" target="_blank" rel="noopener">CommStatXR BETA 0.03</a></h3>
