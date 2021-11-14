@@ -9,9 +9,9 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QGridLayout, QMainWindow, QPlainTextEdit, QWidget, QTableWidget, QMenu, \
     QAction, qApp, QScrollArea, QLabel, QDialog, QInputDialog
 from PyQt5.QtCore import QUrl, QTime, QTimer, QDateTime, Qt
-from PyQt5.QtWebEngineWidgets import QWebEngineView
+#from PyQt5.QtWebEngineWidgets import QWebEngineView
 import io
-import folium
+#import folium
 import sqlite3
 import os
 import settings
@@ -112,7 +112,7 @@ class Ui_MainWindow(QWidget):
         #self.widget = QtWidgets.QWidget(self.centralwidget)
         #self.widget.setObjectName("widget")
         #self.gridLayout_2.addWidget(self.widget, 3, 0, 1, 1)
-        self.mapperWidget()
+        #self.mapperWidget()
 
         #self.tableWidget_2 = QtWidgets.QTableWidget(self.centralwidget)
         #self.tableWidget_2.setObjectName("tableWidget_2")
@@ -248,7 +248,7 @@ class Ui_MainWindow(QWidget):
 
 
         finalpath2 = os.path.abspath(os.getcwd())
-        finalpath3 = finalpath2+"/copyDirected.txt"
+        finalpath3 = finalpath2+"/copyDIRECTED.TXT"
         watch2 = QtCore.QFileSystemWatcher(self)
         watch2.addPath(finalpath3)
         print(finalpath3)
@@ -499,6 +499,7 @@ class Ui_MainWindow(QWidget):
         print("Directed completed : counter :"+str(directedcounter))
 
         self.loadbulletins()
+        print("ran loadbulletins")
         self.loadData()
         self.label_3.setText(" Active Group : "+selectedgroup)
         #QtCore.QTimer.singleShot(0000, self.directed)
