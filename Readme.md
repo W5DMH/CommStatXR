@@ -6,8 +6,11 @@ probably best to update python a bit before starting: <br>
 <b>in a terminal type : python3 -m pip install --upgrade pip </b>
 when the above command completes, make sure you are in the commstatx folder and then : <br>
 
-Download the archive into home/pi, unarchive it and it will create the folder "commstatx", go into that folder and run install.py 
-<b>type: Python3 install.py </b>
+Download the archive into home/pi, to unarchive the file: 
+<b>type: tar -xvf commstatxR.tar.gz </b><br>
+
+and it will create the folder "commstatx", go into that folder and run install.py 
+<b>type: python3 install.py </b><br>
 
 After a successful install (this installs all of the necessary Python modules) 
 
