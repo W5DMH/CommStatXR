@@ -267,7 +267,7 @@ class Ui_MainWindow(QWidget):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "CommStatX"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "CommStatX BETA Ver 0.02"))
         self.label.setText(_translate("MainWindow", "TextLabel Marquee"))
         self.label_2.setText(_translate("MainWindow", "TextLabel Clock"))
         self.menuEXIT.setTitle(_translate("MainWindow", "MENU"))
@@ -621,7 +621,7 @@ class Ui_MainWindow(QWidget):
         print("time start")
         counter += 1
         print("here is the thread counter"+str(counter))
-        call(["python", "datareader.py"])
+        call(["python3", "datareader.py"])
 
         #time.sleep(10)
         print("datareader stopped")

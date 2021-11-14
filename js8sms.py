@@ -145,7 +145,7 @@ class Ui_FormJS8SMS(object):
             smscmd = "@APRSIS CMD :SMSGTE   :@"
             smstail = "{04}";
             message = "" + smscmd + "" + phone + "  " + txtmsg + " " + smstail+""
-            messageType = js8callAPIsupport.TYPE_TX_SETMESSAGE
+            messageType = js8callAPIsupport.TYPE_TX_SEND
             mode = "EMAIL-2"
             mode = mode.ljust(9)
             messageString = message  # mode+" "+self.tocall.get()+" "+text
