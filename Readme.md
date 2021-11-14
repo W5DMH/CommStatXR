@@ -1,5 +1,5 @@
-# CommStatX BETA 0.03 Released 11/14/21
-<h3 style="color: #4485b8;">CommStatX BETA 0.03 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatX/blob/main/CommStatXBeta.png?raw=true" alt="CommStatX 0.03" width="300" height="170" /></h3>
+# CommStatXR BETA 0.01 Released 11/14/21
+<h3 style="color: #4485b8;">CommStatXR BETA 0.01 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatXR/blob/main/CommStatXBeta.png?raw=true" alt="CommStatXR 0.01" width="300" height="170" /></h3>
 
 CommstatX is a Python version of the CommStat software designed to run on Linux(windows X version coming soon) 
 Download the archive, unarchive it into the folder commstatx and run install.py 
