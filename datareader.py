@@ -35,6 +35,8 @@ def getConfig():
         callsignSuffix = format(userinfo["callsignsuffix"])
         group1 = format(userinfo["group1"])
         group2 = format(userinfo["group2"])
+        if len(group2) < 4:
+            group2 = group1
         grid = format(userinfo["grid"])
         path = format(systeminfo["path"])
 
@@ -138,7 +140,7 @@ def parseDirected():
     for num, str in enumerate(last_lines, 1):
         if group1 in str:
             currentgrp = group1
-            print("group1 in currentgrp :"+currentgrp)
+            #print("group1 is in string : "+currentgrp)
             membergrp1 = group1
 
         if group2 in str:
@@ -164,7 +166,7 @@ def parseDirected():
                 arr4 = callsignlg.split('/')
                 callsign = arr4[0]
                 bulletin = arr2[2]
-                print("bulletin group "+currentgrp)
+                print(currentgrp)
                 #print(arr)
 
                 cur.execute("INSERT OR REPLACE INTO bulletins_Data (datetime, idnum, groupid, callsign, message) VALUES(?, ?, ?, ?, ? )", (utc, id, currentgrp, callsign, bulletin))
@@ -234,11 +236,11 @@ def parseDirected():
                 callsign = arr4[0]
                 color = arr2[2]
                 marquee = arr2[3]
+                #print("marquee to be written - id :"+id+" callsign :"+callsign+" groupname :"+currentgrp+" time :"+utc+" color :"+color+" mesaage : "+marquee)
                 cur.execute("INSERT OR REPLACE INTO marquees_Data (idnum, callsign, groupname, date, color, message) VALUES(?, ?, ?, ?, ?, ?)", (id, callsign, currentgrp, utc, color, marquee))
                 conn.commit()
                 getmember(callsign, membergrp1,membergrp2, utc)
                 print(count)
-                print("marquee group1 :"+currentgrp "and id = "+id)
             if "{~%}" in str:  # CHECKIN
                 arr = str.split('\t')
                 utc = arr[0]
@@ -292,20 +294,22 @@ def parseDirected():
                 #getmember(callsign, membergrp1,membergrp2, utc)
                 #print(arr2[1])
             else:
-                arr = str.split('\t')
-                utc = arr[0]
-                callsignmix = arr[4]
-                arr2 = callsignmix.split(',')
-                callsignlong = arr2[0]
-                arr3 = callsignlong.split(':')
-                callsignlg = arr3[0]
-                arr4 = callsignlg.split('/')
-                callsign = arr4[0]
-                if len(callsign) > 3 and len(callsign) < 7:
-                    getheard(callsign, utc)
-                else:
+                try:
+                    arr = str.split('\t')
+                    utc = arr[0]
+                    callsignmix = arr[4]
+                    arr2 = callsignmix.split(',')
+                    callsignlong = arr2[0]
+                    arr3 = callsignlong.split(':')
+                    callsignlg = arr3[0]
+                    arr4 = callsignlg.split('/')
+                    callsign = arr4[0]
+                    if len(callsign) > 3 and len(callsign) < 7:
+                        getheard(callsign, utc)
+                    else:
+                        continue
+                except IndexError:
                     continue
-
 
 def checkIfProcessRunning(processName):
     '''
@@ -344,7 +348,6 @@ def runreaders():
 
 
 #runreaders()
-
 
 
 
