@@ -27,7 +27,7 @@ After that is complete you should be able to run CommStatx by retyping:<br>
 <BR>
 
  
-<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/CommStatXR/blob/main/commstatxR.tar.gz" target="_blank" rel="noopener">CommStatXR BETA 0.01</a></h3>
+<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/CommStatXR/raw/main/commstatx.tar.gz" target="_blank" rel="noopener">CommStatXR BETA 0.01</a></h3>
 <hr />
 
 Get CommStat Support at: <br>
