@@ -1,5 +1,5 @@
-# CommStatXR BETA 0.03 Released 11/16/21
-<h3 style="color: #4485b8;">CommStatXR BETA 0.03 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatXR/blob/main/CommStatXBeta.png?raw=true" alt="CommStatXR 0.03" width="300" height="170" /></h3>
+# CommStatXR BETA 0.04 Released 11/17/21
+<h3 style="color: #4485b8;">CommStatXR BETA 0.04 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatXR/blob/main/CommStatXBeta.png?raw=true" alt="CommStatXR 0.04" width="300" height="170" /></h3>
 
 CommstatXR is a Python version of the CommStat software designed to run on Rasberry Pi Buster (Bullseye is not supported) operating systems. 
 probably best to update python a bit before starting: <br>
@@ -27,7 +27,7 @@ After that is complete you should be able to run CommStatx by retyping:<br>
 <BR>
 
  
-<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/CommStatXR/raw/main/commstatx.tar.gz" target="_blank" rel="noopener">CommStatXR BETA 0.03 with Maps</a></h3>
+<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/CommStatXR/raw/main/commstatx.tar.gz" target="_blank" rel="noopener">CommStatXR BETA 0.04 with Maps</a></h3>
 <hr />
 
 Get CommStat Support at: <br>
