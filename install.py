@@ -12,13 +12,13 @@ def runsettings():
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-firstmodule = "pyqt5"
-secondmodule = "PyQtWebEngine"
+#firstmodule = "pyqt5"
+#secondmodule = "PyQtWebEngine"
 thirdmodule = "feedparser"
 forthmodule = "file-read-backwards"
 fifthmodule = "folium"
-install(firstmodule)
-install(secondmodule)
+#install(firstmodule)
+#install(secondmodule)
 install(thirdmodule)
 install(forthmodule)
 install(fifthmodule)
