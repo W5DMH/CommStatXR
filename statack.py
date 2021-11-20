@@ -170,6 +170,7 @@ class Ui_FormStatack(object):
     def transmit(self):
         global selectedgroup
         global callsign
+        global acklist
 
         comments1 = "StatRep Received   "+ acklist
         comments = re.sub("[^A-Za-z0-9*\-\s]+", " ", comments1)
